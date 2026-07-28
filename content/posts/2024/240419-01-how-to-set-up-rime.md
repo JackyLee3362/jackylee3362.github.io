@@ -1,5 +1,5 @@
 ---
-title: How to Set Up Rime
+title: 如何设置输入法 Rime 
 date: 2024-04-19T00:11:05+08:00
 draft: true
 author: JackyLee

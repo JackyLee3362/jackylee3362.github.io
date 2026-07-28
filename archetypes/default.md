@@ -6,10 +6,10 @@ author: JackyLee
 tags:
 categories: 
 cover:
-  image: 
+  # image: 图片链接
   # alt: 文字内容
-  caption: 标题
-  relative: false
-  hidden: true
+  # caption: 图片标题
+  # relative: false
+  # hidden: false
 comment: true
 ---
