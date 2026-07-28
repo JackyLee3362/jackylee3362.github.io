@@ -1,7 +1,7 @@
 ---
 title: Git 一些比较复杂的使用场景
 date: 2024-04-03T13:53:54+08:00
-draft: true
+draft: false
 author: JackyLee
 tags:
   - git
@@ -25,7 +25,10 @@ comment: true
 
 场景描述：
 
-通常我会在 `dev` 分支上操作，然后细粒度地提交 commit，上传到 github 上形成一个 pull-request，然后 `main` 再接受 pr，合并成一个
+通常我会在 `dev` 分支上操作，
+然后细粒度地提交 commit，
+上传到 github 上形成一个 pull-request，
+然后 `main` 再接受 pr，然后合并成一个
 
 但是有时候会忘记切换分支（比如现在就是），直接在 main 上更改
 

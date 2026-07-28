@@ -9,18 +9,25 @@ tags:
   - rime
   - cpp
   - c
-categories: 
+categories:
   - 计算机
 comment: true
 ---
 
-## Rime
+## 介绍
+
+Rime
 
 ### 小狼毫
 
-一些问题：如何取消 ctrl+grave 的快捷键
-如何切换 ascii mode
-雾凇输入法的配置
-vscode 的 vim 模式
-[weasel.yaml 速查 · rime/weasel Wiki](https://github.com/rime/weasel/wiki/weasel.yaml-%E9%80%9F%E6%9F%A5)
-mac 上要怎么配置
+## FAQ
+
+- 如何取消 ctrl+grave 的快捷键
+- 如何切换 ascii mode
+- 雾凇输入法的配置
+- vscode 的 vim 模式
+- mac 上要怎么配置
+
+## 参考文档
+
+- [weasel.yaml 速查 · rime/weasel Wiki](https://github.com/rime/weasel/wiki/weasel.yaml-%E9%80%9F%E6%9F%A5)

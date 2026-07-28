@@ -3,7 +3,7 @@ title: 如何优雅地使用 spock 框架写单测
 date: 2024-07-26T22:01:31+08:00
 draft: false
 author: JackyLee
-tags: 
+tags:
   - java
   - groovy
   - spock
@@ -13,7 +13,7 @@ categories:
 comment: true
 ---
 
-## 依赖
+## 添加 Spock 依赖
 
 ```xml
 <!-- 1.Spock 相关 -->
@@ -80,7 +80,7 @@ class StaticMethodSpec extends Specification {
 
         then: "比较"
         res != exp
-        // 或者 
+        // 或者
         with(res){
             name == v_name
             age == v_age
@@ -97,7 +97,7 @@ class StaticMethodSpec extends Specification {
 ### 捕获异常
 
 ```groovy
-def "测试类"(){
+def "test 测试类"(){
     //...
 
     then:
@@ -112,7 +112,7 @@ def "测试类"(){
 ### 校验参数
 
 ```groovy
-def "测试类"(){
+def "test 测试类"(){
     //...
 
     then:

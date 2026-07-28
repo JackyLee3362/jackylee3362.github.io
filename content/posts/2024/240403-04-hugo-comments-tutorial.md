@@ -3,37 +3,39 @@ title: Hugo 添加评论功能
 date: 2024-04-03T22:54:29+08:00
 draft: true
 author: JackyLee
-tags: 
+tags:
   - go
   - hugo
   - 教程
-categories: 
+categories:
   - 计算机
 comment: true
 ---
-## 第 1 步： 获得 Giscus 原始标签
+
+## 第一步： 获得 Giscus 原始标签
 
 在 [Giscus 官方](https://giscus.app/zh-CN) 配置好以后，获得如下的 `<script>...</script>` 标签
 
 ```html
-<script src="https://giscus.app/client.js"
-        data-repo="[在此输入仓库]"
-        data-repo-id="[在此输入仓库 ID]"
-        data-category="[在此输入分类名]"
-        data-category-id="[在此输入分类 ID]"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
+<script
+  src="https://giscus.app/client.js"
+  data-repo="[在此输入仓库]"
+  data-repo-id="[在此输入仓库 ID]"
+  data-category="[在此输入分类名]"
+  data-category-id="[在此输入分类 ID]"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="preferred_color_scheme"
+  data-lang="zh-CN"
+  crossorigin="anonymous"
+  async
+></script>
 ```
 
-## 第 2 步：配置 `themes` 目录的文件
+## 第二步：配置 `themes` 目录的文件
 
 不同的主题可能不一样，需要灵活转变，这里用 `PaperMod` 主题举例，该主题并未配置评论的 html，那么应该怎么办呢
 
@@ -52,7 +54,7 @@ comment: true
 1. 在任何页面都会产生评论功能，比如主页，就不是很好看
 2. 只能对特定主题生效，切换主题仍然需要重新配置
 
-## 第 3 步：依然配置 `themes` 目录文件
+## 第三步：依然配置 `themes` 目录文件
 
 如果我们在刚刚的 `extend_footer.html` 中输入这样一段代码
 
@@ -81,11 +83,12 @@ comments: true
 更改刚刚的 `comment.html` 文件
 
 ```html
-{{- if (eq (.Site.Params.Page.Comment.Enable | default false) true) -}}
-        {{- if (eq (.Params.Comment | default false) true) -}}
-                <script> /* 刚刚配置好的 */</script>
-        {{- end -}}
-{{- end -}}
+{{- if (eq (.Site.Params.Page.Comment.Enable | default false) true) -}} {{- if
+(eq (.Params.Comment | default false) true) -}}
+<script>
+  /* 刚刚配置好的 */
+</script>
+{{- end -}} {{- end -}}
 ```
 
 该代码的含义是，如果环境中存在变量 `.Site.Params.Page.Comment.Enable` （不存在则默认 `false`），等于 `true`，则继续
@@ -100,11 +103,11 @@ comments: true
 
 ```css
 .giscus .giscus-frame {
-    width: 100%;
-    max-width: 768px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 ```
 
