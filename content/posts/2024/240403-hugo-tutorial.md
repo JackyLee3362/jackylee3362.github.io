@@ -16,7 +16,7 @@ comment: true
 
 ## 优雅地添加图片
 
-![崩坏星穹铁道](assets/1200px-star-rail.png)
+![崩坏星穹铁道](https://assets-1302294329.cos.ap-shanghai.myqcloud.com/2026/md/20260728162921.png)
 
 [Hugo 博客插入图片的方法 | Cassius's Blog](https://www.yuweihung.com/posts/2021/hugo-blog-picture/)
 

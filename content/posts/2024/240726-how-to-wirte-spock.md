@@ -1,10 +1,16 @@
 ---
 title: 如何优雅地使用 spock 框架写单测
 date: 2024-07-26T22:01:31+08:00
-draft: true
+draft: false
 author: JackyLee
-tags: [单元测试, spock, java, groovy]
-categories: [groovy, 测试]
+tags: 
+  - 单元测试
+  - spock
+  - java
+  - groovy
+categories:
+  - groovy,
+  - 测试
 comment: true
 ---
 

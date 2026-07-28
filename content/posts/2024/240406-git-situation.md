@@ -30,7 +30,7 @@ comment: true
 
 直接切换会出现
 
-![签出会覆盖本地修改](assets/override-local-change.png)
+![签出会覆盖本地修改](https://assets-1302294329.cos.ap-shanghai.myqcloud.com/2026/md/override-local-change.png)
 
 该提示下的三个选项分别是什么意思呢？
 
@@ -48,11 +48,11 @@ comment: true
 
 在修改完以后，回到原先的分支，可以看到 stash 的小图标
 
-![stash-graph](assets/stash-graph.png)
+![stash-graph](https://assets-1302294329.cos.ap-shanghai.myqcloud.com/2026/md/20260728162741.png)
 
 此时右键单击该小图标，会弹出如下对话框
 
-![stash-apply-pop](assets/stash-apply-pop.png)
+![stash-apply-pop](https://assets-1302294329.cos.ap-shanghai.myqcloud.com/2026/md/20260728162758.png)
 
 那么两个选项有什么区别呢？
 
