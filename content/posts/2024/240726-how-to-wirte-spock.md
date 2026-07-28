@@ -4,13 +4,12 @@ date: 2024-07-26T22:01:31+08:00
 draft: false
 author: JackyLee
 tags: 
-  - 单元测试
-  - spock
   - java
   - groovy
+  - spock
+  - 单元测试
 categories:
-  - groovy,
-  - 测试
+  - 计算机
 comment: true
 ---
 

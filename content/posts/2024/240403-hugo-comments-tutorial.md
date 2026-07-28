@@ -3,8 +3,11 @@ title: Hugo 添加评论功能
 date: 2024-04-03T22:54:29+08:00
 draft: true
 author: JackyLee
-tags: [hugo]
-categories: [教程]
+tags: 
+  - go
+  - hugo
+categories: 
+  - 计算机
 comment: true
 ---
 ## 第 1 步： 获得 Giscus 原始标签
@@ -105,7 +108,6 @@ comments: true
 ```
 
 （不是专业前端选手，不要笑话🫠）勉强可以将评论的行宽缩小一点
-
 
 ## 参考
 

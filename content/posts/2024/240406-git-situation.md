@@ -3,8 +3,10 @@ title: Git 一些比较复杂的使用场景
 date: 2024-04-03T13:53:54+08:00
 draft: true
 author: JackyLee
-tags: [git]
-categories: [场景]
+tags:
+  - git
+categories:
+  - 计算机
 comment: true
 ---
 

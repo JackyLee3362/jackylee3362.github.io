@@ -3,7 +3,7 @@ title: {{ replace .File.ContentBaseName "-" " " | title }}
 date: {{ .Date }}
 draft: true
 author: JackyLee
-tags: []
-categories: []
+tags:
+categories:
 comment: true
 ---
