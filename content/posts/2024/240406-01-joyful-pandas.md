@@ -7,6 +7,7 @@ tags:
   - python
   - github
   - 教程
+  - 开源项目
 categories:
   - 计算机
 comment: true

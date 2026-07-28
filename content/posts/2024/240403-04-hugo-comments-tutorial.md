@@ -6,6 +6,7 @@ author: JackyLee
 tags: 
   - go
   - hugo
+  - 教程
 categories: 
   - 计算机
 comment: true

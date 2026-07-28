@@ -4,10 +4,11 @@ date: 2024-04-19T00:11:05+08:00
 draft: true
 author: JackyLee
 tags:
+  - 开源项目
   - 输入法
   - rime
-  - c
   - cpp
+  - c
 categories: 
   - 计算机
 comment: true

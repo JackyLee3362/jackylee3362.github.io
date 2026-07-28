@@ -5,6 +5,7 @@ draft: true
 author: JackyLee
 tags:
   - git
+  - 常用命令行
 categories:
   - 计算机
 comment: true
