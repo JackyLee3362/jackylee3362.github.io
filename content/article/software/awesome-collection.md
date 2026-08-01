@@ -1,5 +1,5 @@
 ---
-title: awesome命令行应用(搬运)
+title: Awesome 收集箱
 date: 2026-07-30T00:04:42+08:00
 draft: false
 author: JackyLee
@@ -8,7 +8,7 @@ tags:
   - 翻译
   - Awesome
 categories:
-  - 计算机
+  - 软件
 cover:
   image: https://assets-1302294329.cos.ap-shanghai.myqcloud.com/2026/md/wallhaven-9o9rpd.jpg
   hidden: false
@@ -19,75 +19,17 @@ tocopen: false
 
 > 一份精心整理的命令行应用程序列表。
 
-Fork 来源 [awesome](https://github.com/agarrharr/awesome-cli-apps) 仓库
-
 ---
 
-## 娱乐
+## 收集箱
 
-- [newsboat](https://github.com/newsboat/newsboat) - 可扩展的文本终端 RSS 订阅阅读器。
-- [mal-cli](https://github.com/L4z3x/mal-cli) - MyAnimeList 客户端。
-- [golazo](https://github.com/0xjuanma/golazo) - 足球比赛信息。
+- [cloc](https://github.com/aldanial/cloc) - 统计代码行数
+- [thefuck](https://github.com/nvbn/thefuck) - 修复上一条命令
 
-### 音乐
+## Awesome 类
 
-- [cmus](https://github.com/cmus/cmus) - 小巧、快速且强大的控制台音乐播放器。
-- [Instant-Music-Downloader](https://github.com/yask123/Instant-Music-Downloader) - 即时音乐下载器。
-- [itunes-remote](https://github.com/mischah/itunes-remote) - 通过命令行控制 iTunes。
-- [pianobar](https://6xq.net/pianobar/) - Pandora 客户端。
-- [somafm-cli](https://github.com/rockymadden/somafm-cli) - 在终端中收听 SomaFM。
-- [mpd](https://github.com/MusicPlayerDaemon/MPD) - 音乐播放器守护进程。
-- [ncmpcpp](https://github.com/arybczak/ncmpcpp) - mpd 客户端。
-- [moc](https://moc.daper.net/) - Linux/UNIX 控制台音频播放器。
-- [musikcube](https://github.com/clangen/musikcube) - 跨平台、基于终端的音乐播放器、音频引擎、元数据索引器和服务器。
-- [beets](https://github.com/beetbox/beets) - 音乐库管理器和标签编辑器。
-- [spotatui](https://github.com/LargeModGames/spotatui) - Spotify 客户端。
-- [swaglyrics-for-spotify](https://github.com/SwagLyrics/SwagLyrics-For-Spotify) - Spotify 歌词显示。
-- [dzr](https://github.com/yne/dzr) - deezer.com 播放器。
-- [radio-active](https://github.com/deep5050/radio-active) - 拥有 4 万多个电台的网络收音机播放器。
-- [mpvc](https://github.com/gmt4/mpvc) - 基于 mpv 的音乐播放器。
-- [TUISIC](https://github.com/Dark-Kernel/tuisic) - 免登录音乐流媒体播放。
-- [termusic](https://github.com/tramhao/termusic) - Rust 编写的音乐播放器，支持下载功能。
-- [ytm-player](https://github.com/peternaame-boop/ytm-player) - YouTube Music 播放器。
-- [tunein-cli](https://github.com/tsirysndr/tunein-cli) - TuneIn 和 Radio Browser 客户端。
-
-### 视频
-
-- [youtube-dl](https://github.com/ytdl-org/youtube-dl) - 从 YouTube.com 及许多其他视频网站下载视频。
-- [streamlink](https://github.com/streamlink/streamlink) - 从各种网站提取流媒体到你选择的视频播放器中。
-- [mps-youtube](https://github.com/mps-youtube/mps-youtube) - YouTube 播放器。
-- [mpv](https://mpv.io) - 卓越的视频播放器。
-- [editly](https://github.com/mifi/editly) - 声明式视频编辑工具。
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - `youtube-dl` 的分支，具有额外的功能和修复。
-- [cinema](https://github.com/marm00/cinema) - 视频和流媒体多画面查看器。
-- [capcut-cli](https://github.com/renezander030/capcut-cli) - 编辑 CapCut/剪映项目。
-
-### 电影
-
-- [moviemon](https://github.com/iCHAIT/moviemon) - 关于你电影的一切。
-- [movie](https://github.com/mayankchd/movie) - 获取电影信息或比较电影。
-
-### 游戏
-
-- [Dwarf Fortress](https://www.bay12games.com/dwarves/) - Roguelike 建造与管理模拟游戏。
-- [Cataclysm-DDA](https://cataclysmdda.org) - 设定在后末日世界的回合制生存游戏。
-- [Pokete](https://github.com/lxgr-linux/Pokete) - 类宝可梦游戏。
-- [NetHack](https://www.nethack.org) - Roguelike 地牢探险游戏。
-
-### 书籍
-
-- [epr](https://github.com/wustho/epr)、[epy](https://github.com/wustho/epy) - EPUB 阅读器。
-- [Bible.Js CLI](https://github.com/BibleJS/BibleApp) - 圣经。
-- [SpeedRead](https://github.com/sunsations/speed_read) - 类 Spritz 快速阅读器。
-- [medium-cli](https://github.com/djadmin/medium-cli) - 阅读 [medium.com](https://medium.com/) 上的文章。
-- [hygg](https://github.com/kruserr/hygg) - 文档阅读器。
-
-### 聊天
-
-- [WeeChat](https://weechat.org/) - 快速、轻量且可扩展的聊天客户端。
-- [irssi](https://github.com/irssi/irssi) - IRC 聊天客户端。
-- [kirc](https://github.com/mcpcpc/kirc) - 微型 IRC 客户端。
-- [concord](https://github.com/chojs23/concord) - Discord 客户端。
+- [awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps) 仓库
+- [awesome-stars](https://github.com/maguowei/awesome-stars) - Awesome 系列 Star 数量
 
 ## 开发
 
@@ -120,6 +62,10 @@ Fork 来源 [awesome](https://github.com/agarrharr/awesome-cli-apps) 仓库
 - [helix](https://github.com/helix-editor/helix) - 受 kakoune 启发的模态编辑器。
 - [Prosaic](https://github.com/DimwitLabs/Prosaic) - 专为长篇写作打造的写作者优先应用。
 - [Microsoft Edit](https://github.com/microsoft/edit) - 简洁的编辑器。
+
+- [vscode](https://github.com/microsoft/vscode) - VSCode 最强的开源IDE
+- [IntellJ](https://github.com/jetbrains/intellij-community) - IDEA 开源社区版本
+- [Eclipse IDE](https://github.com/eclipse-ide) - Eclipse IDE
 
 ### 前端开发
 
@@ -219,12 +165,23 @@ Fork 来源 [awesome](https://github.com/agarrharr/awesome-cli-apps) 仓库
 
 ### HTTP 客户端
 
-- [HTTPie](https://github.com/httpie/httpie) - 用户友好的 HTTP 客户端。
-- [HTTP Prompt](https://github.com/eliangcs/http-prompt) - 具有自动补全和语法高亮的交互式 HTTP 客户端。
-- [ain](https://github.com/jonaslu/ain) - 用简洁格式组织 API 端点的 HTTP 客户端。
-- [curlie](https://github.com/rs/curlie) - 具有 HTTPie 般易用性的 curl 前端。
-- [ATAC](https://github.com/Julien-cpsn/ATAC) - Rust 编写的全功能 TUI API 客户端。
-- [httptap](https://github.com/ozeranskii/httptap) - 分解和可视化 HTTP 请求。
+> GUI
+
+- [hopscotch](https://github.com/hoppscotch/hoppscotch) - HTTP GUI 客户端 79.9⭐，适合团队部署
+- [bruno](https://github.com/usebruno/bruno) - HTTP GUI 客户端 42.6k⭐，本地开发
+- [insomnia](https://github.com/Kong/insomnia) - HTTP GUI 客户端 39k⭐
+- [Thunder Client](https://github.com/thunderclient/thunder-client-support) - HTTP 客户端 vscode 插件 3.7k⭐
+
+> CLI
+
+- [curl](https://github.com/curl/curl) - 42.5k⭐ 工业标准，底层网络调试首选，功能最全，学习曲线陡 42.5k⭐
+- [HTTPie](https://github.com/httpie/httpie) - 用户友好的 HTTP 客户端 38.4k⭐
+- [HTTP Prompt](https://github.com/eliangcs/http-prompt) - 具有自动补全和语法高亮的交互式 HTTP 客户端，9.1k⭐
+- [xh](https://github.com/ducaale/xh) - Rust 实现，httpie 现代化替代品 8k⭐
+- [ain](https://github.com/jonaslu/ain) - 用简洁格式组织 API 端点的 HTTP 客户端。623⭐
+- [curlie](https://github.com/rs/curlie) - curl + httpie 结合：使用 curl 底层，拥有 httpie 漂亮输出 3.7k⭐
+- [ATAC](https://github.com/Julien-cpsn/ATAC) - Rust 编写的全功能 TUI API 客户端。3.7k⭐
+- [httptap](https://github.com/ozeranskii/httptap) - 分解和可视化 HTTP 请求。510⭐
 
 ### 测试
 
@@ -577,6 +534,7 @@ Fork 来源 [awesome](https://github.com/agarrharr/awesome-cli-apps) 仓库
 
 ### 文件同步与共享
 
+- [syncthing](https://github.com/syncthing/syncthing) - 同步工具 🔥
 - [rclone](https://github.com/ncw/rclone) - 与各种云存储提供商同步文件。
 - [ffsend](https://github.com/timvisee/ffsend) - 快速文件分享。
 - [share-cli](https://github.com/marionebl/share-cli) - 与本地网络共享文件。
@@ -588,7 +546,7 @@ Fork 来源 [awesome](https://github.com/agarrharr/awesome-cli-apps) 仓库
 - [ncp](https://github.com/kha7iq/ncp) - 与 NFS 服务器之间传输文件和文件夹。
 - [share](https://github.com/beavailable/share) - 通过 HTTP 轻松共享和接收文件。
 - [shuk](https://shuk.rs) - 使用 Amazon S3 存储桶快速共享文件。
-- [croc](https://github.com/schollz/croc) - 轻松在计算机之间发送内容。
+- [croc](https://github.com/schollz/croc) - 轻松在计算机之间发送内容。🎉
 - [filecast](https://github.com/gistrec/filecast) - 在局域网内快速向多台机器传输文件。
 
 ### 目录列表
@@ -597,7 +555,7 @@ Fork 来源 [awesome](https://github.com/agarrharr/awesome-cli-apps) 仓库
 - [eza](https://github.com/eza-community/eza) - `ls` 的改进版。
 - [tre](https://github.com/dduan/tre) - 具有 Git 感知、编辑器别名等功能的 `tree`。
 - [ll](https://github.com/antonmedv/ll) - 带有 Git 状态信息的 `ls`。
-- [lsd](https://github.com/Peltoche/lsd) - 具有许多额外功能的 `ls`。
+- [lsd](https://github.com/Peltoche/lsd) - 具有许多额外功能的 `ls`。⚡️
 - [lla](https://github.com/triyanox/lla) - 带插件系统的改进版 `ls`。
 - [pls](https://github.com/pls-rs/pls) - 专业级的 `ls`。
 - [treepp](https://github.com/Water-Run/treepp) - Windows 版的 tree++。
@@ -606,7 +564,7 @@ Fork 来源 [awesome](https://github.com/agarrharr/awesome-cli-apps) 仓库
 
 - [autojump](https://github.com/wting/autojump) - 会学习的 cd 命令——轻松从命令行导航目录。
 - [pm](https://github.com/Angelmmiguel/pm) - 在 Shell 中轻松切换到你的项目目录。
-- [z](https://github.com/rupa/z) - z 是新的 j。
+- [z](https://github.com/rupa/z) - z 是新的 j。⚡️
 - [PathPicker](https://github.com/facebook/pathpicker/) - 解析命令输出后，PathPicker 为你提供一个漂亮的界面来选择你感兴趣的文件。
 - [fz](https://github.com/changyuheng/fz.sh) - z 的无缝模糊 Tab 补全。
 - [goto](https://github.com/iridakos/goto) - 带自动补全的 Shell 目录别名。
@@ -622,7 +580,7 @@ Fork 来源 [awesome](https://github.com/agarrharr/awesome-cli-apps) 仓库
 - [fzf](https://github.com/junegunn/fzf) - 通用命令行模糊查找器，可用于任何列表：文件/目录、命令历史、进程、主机名、书签、Git 提交等。
 - [fselect](https://github.com/jhspetersson/fselect) - 使用类 SQL 查询查找文件。
 - [fd](https://github.com/sharkdp/fd) - `find` 的简单、快速且用户友好的替代品。
-- [broot](https://github.com/Canop/broot) - 类似 fzf 的模糊查找器，但增加了空间使用可视化功能。
+- [broot](https://github.com/Canop/broot) - 类似 fzf 的模糊查找器，但增加了空间使用可视化功能。🎉
 - [rare](https://github.com/zix99/rare) - 实时正则表达式聚合与分析。
 - [skim](https://github.com/lotabout/skim) - Rust 编写的通用模糊查找器，类似 fzf。
 - [ast-grep](https://github.com/ast-grep/ast-grep) - 代码结构化搜索、Lint 和重写工具。
@@ -708,6 +666,7 @@ Fork 来源 [awesome](https://github.com/agarrharr/awesome-cli-apps) 仓库
 
 - [cmatrix](https://github.com/Treri/cmatrix) - 滚动式「黑客帝国」风格屏幕。
 - [pipes.sh](https://github.com/pipeseroni/pipes.sh) - 屏幕上随机生长蔓延的管道。
+- [pipes-rs](https://github.com/lhvy/pipes-rs) - 屏幕上随机生长蔓延的管道(Rust版本)。🎉
 - [YuleLog](https://github.com/Duroktar/YuleLog) - 圣诞壁炉火焰。
 - [cli-fireplace](https://github.com/dolsup/cli-fireplace) - 数字壁炉。
 - [gitlogue](https://github.com/unhappychoice/gitlogue) - 电影般的 Git 提交回放。
@@ -760,6 +719,72 @@ Fork 来源 [awesome](https://github.com/agarrharr/awesome-cli-apps) 仓库
 - [Nanocoder](https://github.com/Nano-Collective/nanocoder) - 本地优先的智能体 TUI。
 - [faf-cli](https://github.com/Wolfe-Jam/faf-cli) - 从代码仓库的真实技术栈自动编写 AGENTS.md、CLAUDE.md 和 .cursorrules 等 AI 上下文文件。
 - [agentty](https://github.com/1ay1/agentty) - C++ 智能体 TUI。
+
+## 娱乐
+
+- [newsboat](https://github.com/newsboat/newsboat) - 可扩展的文本终端 RSS 订阅阅读器。
+- [mal-cli](https://github.com/L4z3x/mal-cli) - MyAnimeList 客户端。
+- [golazo](https://github.com/0xjuanma/golazo) - 足球比赛信息。
+
+### 音乐
+
+- [cmus](https://github.com/cmus/cmus) - 小巧、快速且强大的控制台音乐播放器。
+- [Instant-Music-Downloader](https://github.com/yask123/Instant-Music-Downloader) - 即时音乐下载器。
+- [itunes-remote](https://github.com/mischah/itunes-remote) - 通过命令行控制 iTunes。
+- [pianobar](https://6xq.net/pianobar/) - Pandora 客户端。
+- [somafm-cli](https://github.com/rockymadden/somafm-cli) - 在终端中收听 SomaFM。
+- [mpd](https://github.com/MusicPlayerDaemon/MPD) - 音乐播放器守护进程。
+- [ncmpcpp](https://github.com/arybczak/ncmpcpp) - mpd 客户端。
+- [moc](https://moc.daper.net/) - Linux/UNIX 控制台音频播放器。
+- [musikcube](https://github.com/clangen/musikcube) - 跨平台、基于终端的音乐播放器、音频引擎、元数据索引器和服务器。
+- [beets](https://github.com/beetbox/beets) - 音乐库管理器和标签编辑器。
+- [spotatui](https://github.com/LargeModGames/spotatui) - Spotify 客户端。
+- [swaglyrics-for-spotify](https://github.com/SwagLyrics/SwagLyrics-For-Spotify) - Spotify 歌词显示。
+- [dzr](https://github.com/yne/dzr) - deezer.com 播放器。
+- [radio-active](https://github.com/deep5050/radio-active) - 拥有 4 万多个电台的网络收音机播放器。
+- [mpvc](https://github.com/gmt4/mpvc) - 基于 mpv 的音乐播放器。
+- [TUISIC](https://github.com/Dark-Kernel/tuisic) - 免登录音乐流媒体播放。
+- [termusic](https://github.com/tramhao/termusic) - Rust 编写的音乐播放器，支持下载功能。
+- [ytm-player](https://github.com/peternaame-boop/ytm-player) - YouTube Music 播放器。
+- [tunein-cli](https://github.com/tsirysndr/tunein-cli) - TuneIn 和 Radio Browser 客户端。
+
+### 视频
+
+- [youtube-dl](https://github.com/ytdl-org/youtube-dl) - 从 YouTube.com 及许多其他视频网站下载视频。
+- [streamlink](https://github.com/streamlink/streamlink) - 从各种网站提取流媒体到你选择的视频播放器中。
+- [mps-youtube](https://github.com/mps-youtube/mps-youtube) - YouTube 播放器。
+- [mpv](https://mpv.io) - 卓越的视频播放器。
+- [editly](https://github.com/mifi/editly) - 声明式视频编辑工具。
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - `youtube-dl` 的分支，具有额外的功能和修复。
+- [cinema](https://github.com/marm00/cinema) - 视频和流媒体多画面查看器。
+- [capcut-cli](https://github.com/renezander030/capcut-cli) - 编辑 CapCut/剪映项目。
+
+### 电影
+
+- [moviemon](https://github.com/iCHAIT/moviemon) - 关于你电影的一切。
+- [movie](https://github.com/mayankchd/movie) - 获取电影信息或比较电影。
+
+### 游戏
+
+- [Dwarf Fortress](https://www.bay12games.com/dwarves/) - Roguelike 建造与管理模拟游戏。
+- [Cataclysm-DDA](https://cataclysmdda.org) - 设定在后末日世界的回合制生存游戏。
+- [Pokete](https://github.com/lxgr-linux/Pokete) - 类宝可梦游戏。
+- [NetHack](https://www.nethack.org) - Roguelike 地牢探险游戏。
+
+### 书籍
+
+- [epr](https://github.com/wustho/epr)、[epy](https://github.com/wustho/epy) - EPUB 阅读器。
+- [Bible.Js CLI](https://github.com/BibleJS/BibleApp) - 圣经。
+- [SpeedRead](https://github.com/sunsations/speed_read) - 类 Spritz 快速阅读器。
+- [medium-cli](https://github.com/djadmin/medium-cli) - 阅读 [medium.com](https://medium.com/) 上的文章。
+- [hygg](https://github.com/kruserr/hygg) - 文档阅读器。
+
+### 聊天
+
+- [WeeChat](https://weechat.org/) - 快速、轻量且可扩展的聊天客户端。
+- [irssi](https://github.com/irssi/irssi) - IRC 聊天客户端。
+- [kirc](https://github.com/mcpcpc/kirc) - 微型 IRC 客户端。
+- [concord](https://github.com/chojs23/concord) - Discord 客户端。
 
 ### LLM 交互
 

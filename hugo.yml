@@ -87,7 +87,7 @@ params:
       url: "https://github.com/JackyLee3362"
     - name: leetcode
       url: "https://leetcode.cn/u/jacky-lee-n/"
-  
+
   # 暂时不需要
   # analytics:
   #   google:
@@ -138,6 +138,9 @@ params:
         lightTheme: light
         darkTheme: dark
 
+# 首页同时展示 posts 和 article
+mainSections: ["posts", "article"] 
+
 menu:
   main:
     - identifier: categories
@@ -148,6 +151,14 @@ menu:
       name: 标签
       url: /tags/
       weight: 20
+    - identifier: posts
+      name: 随笔
+      url: /posts/
+      weight: 5
+    - identifier: article
+      name: 深度文章
+      url: /article/
+      weight: 8
     # - identifier: example
     #   name: example.org
     #   url: https://example.org

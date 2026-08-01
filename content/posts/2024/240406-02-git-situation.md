@@ -7,7 +7,7 @@ tags:
   - git
   - 常用命令行
 categories:
-  - 计算机
+  - 软件
 comment: true
 ---
 

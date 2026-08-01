@@ -14,5 +14,6 @@ description:
 - [ ] Awesome 项目: <https://github.com/bayandin/awesome-awesomeness>
 - [ ] 做视频
 - [ ] API 客户端
+- [ ] 模态编辑器 vim neovim nano emacs halix / VSCode IntellJ
 
 ## 参考资料

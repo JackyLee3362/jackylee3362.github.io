@@ -9,7 +9,7 @@ tags:
   - spock
   - 单元测试
 categories:
-  - 计算机
+  - 软件
 comment: true
 ---
 

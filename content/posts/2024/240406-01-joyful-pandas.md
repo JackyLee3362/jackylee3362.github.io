@@ -10,7 +10,7 @@ tags:
   - 教程
   - 开源项目
 categories:
-  - 计算机
+  - 软件
 comment: true
 ---
 

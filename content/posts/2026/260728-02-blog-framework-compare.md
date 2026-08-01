@@ -7,7 +7,7 @@ tags:
   - 框架对比
   - 开源项目
 categories:
-  - 计算机
+  - 软件
 comment: true
 cover:
   image: https://w.wallhaven.cc/full/d8/wallhaven-d8oe73.jpg

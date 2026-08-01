@@ -8,7 +8,7 @@ tags:
   - hugo
   - 教程
 categories:
-  - 计算机
+  - 软件
 comment: true
 ---
 

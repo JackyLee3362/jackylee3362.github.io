@@ -8,7 +8,7 @@ tags:
   - hugo
   - 教程
 categories:
-  - 计算机
+  - 软件
 cover:
   image: https://assets-1302294329.cos.ap-shanghai.myqcloud.com/2026/md/20260728162921.png
   hidden: false
