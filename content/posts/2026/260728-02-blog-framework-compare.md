@@ -7,7 +7,7 @@ tags:
   - 框架对比
   - 开源项目
 categories:
-  - 软件
+  - 计算机
 comment: true
 cover:
   image: https://w.wallhaven.cc/full/d8/wallhaven-d8oe73.jpg
@@ -129,3 +129,8 @@ cover:
 - 推荐主题：[Mirages](https://github.com/AlanDecode/Mirages)
 - 依赖要求：PHP + SQLite / MySQL
 - 最大短板：更新缓慢，社区活跃度逐年降低，插件数量有限
+
+## 三、其他
+
+- [silverbulletmd](https://github.com/silverbulletmd/silverbullet)
+- [siyuan](https://github.com/siyuan-note/siyuan)
