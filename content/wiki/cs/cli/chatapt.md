@@ -1,6 +1,6 @@
 ---
-title: tldr
-date: 2026-07-19
+title: chatapt
+date: 2025-11-01
 draft: true
 author: JackyLee
 tags:
@@ -11,15 +11,6 @@ cover:
 comment: true
 ---
 
-## 安装
-
-```sh
-# ❌ scoop install tlrc
-scoop install tealdeer
-```
-
-## 设置语言
-
-## 设置代理
+- [ChatGPT 真的那么牛吗？ - 知乎](https://www.zhihu.com/question/581556221/answer/2896072855)
 
 ## 参考资料
