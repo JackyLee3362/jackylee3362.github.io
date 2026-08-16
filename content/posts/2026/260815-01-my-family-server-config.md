@@ -1,7 +1,7 @@
 ---
 title: 我的家庭服务器
 date: 2026-08-15T00:19:26+08:00
-draft: true
+draft: false
 author: JackyLee
 tags:
 categories:
@@ -22,17 +22,6 @@ cover:
 - FreeBSD: 闭源，高性能
 
 这边我选择使用 Debian 13，联网安装
-
-```sh
-# 查看用户
-whoami
-
-# 查看系统
-uname -a
-```
-
-> 参考这篇文章 [Debian系统最小化安装教程 | DebNAS](https://kekylin.github.io/debnas-docs/guide/debian-minimal-installation/)
-> 语言记得选英文
 
 ## 选择烧录工具
 
@@ -57,6 +46,22 @@ format fs=fat32 quick
 assign
 exit
 ```
+
+## 安装完成之后
+
+```sh
+# 查看用户
+whoami
+
+# 查看系统
+uname -a
+
+# 添加用户
+adduser jacky
+```
+
+> 参考这篇文章 [Debian系统最小化安装教程 | DebNAS](https://kekylin.github.io/debnas-docs/guide/debian-minimal-installation/)
+> 语言记得选英文
 
 ## 安装 sudo 服务
 
@@ -96,7 +101,7 @@ apt install vim
 ip a
 
 # 设置静态ip
-# 将下面的配置更新进去 
+# 将下面的配置更新进去
 sudo vim /etc/network/interfaces
 
 
@@ -113,7 +118,7 @@ ping baidu.com
 auto lo
 iface lo inet loopback
 
-auto 网卡名 
+auto 网卡名
 iface 网卡名 inet static
     address 你的静态地址,比如 192.168.1.95
     netmask 255.255.255.0
@@ -152,43 +157,14 @@ systemctl status sleep.targetsystemctl status sleep.target
 sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
 
+## 设置防火墙
+
+[[ufw]]
+
 ## 附录
 
 ### .vimrc 配置
 
 ```txt
-" 设置在光标距离窗口顶部或底部一定行数时，开始滚动屏幕内容的行为
-set scrolloff=5
-set cursorline
 
-"Vim 会在您输入搜索模式的过程中逐步匹配并高亮显示匹配的文本
-set incsearch
-
-" 禁用命令超时 / 禁用映射超时
-set notimeout
-
-"--在搜索时忽略大小写
-set ignorecase
-
-"--将搜索匹配的文本高亮显示
-set hlsearch
-
-" 设置显示行号(或者set nu) , 取消用set nonumber/nu!
-set number
-set relativenumber
-
-" 剪贴板设置
-set clipboard=unnamed
-
-" 行间移动
-noremap J <C-d>
-noremap K <C-u>
-
-" 行内移动
-noremap H ^
-" noremap L $ 取消 $
-noremap L g_
-
-" 复制
-noremap sp "0p
 ```

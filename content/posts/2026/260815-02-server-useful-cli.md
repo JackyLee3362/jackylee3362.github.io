@@ -1,7 +1,7 @@
 ---
 title: 服务器常用命令
 date: 2026-08-15
-draft: true
+draft: false
 author: JackyLee
 tags:
 categories:
@@ -34,6 +34,18 @@ chmod
 
 ```sh
 ip a
+
+# 开放端口
+```
+
+## 文件相关
+
+```sh
+# 查看文件大小
+ls -lh
+
+# 查看文件权限
+ls -l
 ```
 
 ## 压缩与解压
@@ -80,6 +92,9 @@ scp 远程主机地址:路径/到/远程文件 路径/到/本地目录
 ```sh
 docker compose up -d
 docker compose down
+# 删除数据
+docker compose down -v
+docker compose restart
 docker pull ...
 docker run ...
 docker ps

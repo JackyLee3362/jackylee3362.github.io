@@ -1,7 +1,7 @@
 ---
 title: Awesome 同步类工具
 date: 2026-08-15T00:17:30+08:00
-draft: false
+draft: true
 author: JackyLee
 tags:
   - 开源项目
@@ -19,7 +19,14 @@ tocopen: false
 
 ## 网盘类
 
+- NextCloud
+- FileRun
+
 ## 同步类
+
+- NFS
+- SMB
+- syncthing
 
 ## 备份类
 
