@@ -1,5 +1,5 @@
 ---
-title: awesom-rule-engine
+title: awesom-rule-engine-lib
 date: 2026-08-19
 draft: true
 author: JackyLee

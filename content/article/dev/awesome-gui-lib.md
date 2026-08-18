@@ -1,5 +1,5 @@
 ---
-title: awesome-structure-gui
+title: awesome-gui-lib
 description:
 date: 2025-11-01
 draft: true
