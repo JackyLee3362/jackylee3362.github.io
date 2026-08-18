@@ -5,11 +5,18 @@ draft: true
 author: JackyLee
 tags:
 categories:
+  - lang/python
+  - dotfile
+  - sync
+  - 开源项目
 cover:
   # image: 图片链接
   # alt: 文字内容
 comment: true
 ---
+
+- Python 编写，基于**配置文件**
+- 主要做符号链接、执行脚本；适合简单静态配置，yaml 驱动，逻辑简单，缺点模板、加密、多机差异化能力弱。
 
 ## 参考资料
 

@@ -1,11 +1,19 @@
 ---
-type: basic-note
-title: git 命令行基础
-create_time: 2024-10-08
-update_time:
+title: git
+date: 2026-08-19
+draft: true
+author: JackyLee
 tags:
-description:
+categories:
+cover:
+  # image: 图片链接
+  # alt: 文字内容
+comment: true
 ---
+
+## 子命令
+
+[[git-config]]
 
 ## 常用命令
 
@@ -33,125 +41,75 @@ git switch
 git status
 # 查看状态(简洁版)
 git status -s
+
+# 查看仓库创建了多久
+git log --reverse
+# 查看仓库大小
+git count-objects -vH
 ```
 
-## 初始化
+[[git-init]]
+[[git-add]]
+[[git-branch]]
 
-```sh
-git init
-```
 
-## 添加到暂存区
+## FAQ
 
-1. 将一个尚未被 Git 跟踪的文件纳入 Git 跟踪
-2. 将一个已经被 Git 跟踪的文件且这个文件处于修改状态，通过 add，可以将它纳入暂存区
-3. 将 merge 或者 rebase 后产生的冲突文件标记为冲突已解决
+### git如何对历史搜索
 
-```sh
-git add .
-git add [文件1] [文件2] [文件3]
-git add [文件夹]
-# 更加规范的用法，来自 vscode-git
-# 无 -A 表示只处理新增
-# 其中 -A/-all 表示还处理新增和删除
-git add -A -- [文件]
+### 本地 Git 仓库删除大 object
 
-git rm --cached [文件]
-# 如果是目录 -r
-# 如果需要强制 -f
-```
+- [Git - git-gc Documentation](https://git-scm.com/docs/git-gc/zh_HANS-CN)
+- [git仓库清理--"保姆级"教程这是一篇关于Git仓库清理的文章; 或许你现在还用不到里面的操作;但是看完保证你会有不少 - 掘金](https://juejin.cn/post/7024922528514572302)
 
-> 如何取消，通过对 Vscode 中 Git 的输出查看，可以看到其使用的命令是 `git reset -q HEAD -- .`
-> 也可以使用 `git reset --mixed` 命令
+最简单的方法，删除远程仓库，重新上传并重新提交，缺点是会丢失历史数据，
 
-## 查看当前 git 工作状态
+2025-09-27 由于之前加入 rime-ice 仓库，导致仓库过大，只好按照这个方法
 
-```sh
-git status
-# 简洁版
-git status -s
-```
+- [git项目大小优化笔记,删除历史提交中的大文件 - 凉游浅笔深画眉 - 博客园](https://www.cnblogs.com/fuhua/p/15527023.html#git%E9%A1%B9%E7%9B%AE%E5%A4%A7%E5%B0%8F%E4%BC%98%E5%8C%96%E7%AC%94%E8%AE%B0%E5%88%A0%E9%99%A4%E5%8E%86%E5%8F%B2%E6%8F%90%E4%BA%A4%E4%B8%AD%E7%9A%84%E5%A4%A7%E6%96%87%E4%BB%B6)
 
-## `branch`：分支命令
+- [git仓库清理--"保姆级"教程这是一篇关于Git仓库清理的文章; 或许你现在还用不到里面的操作;但是看完保证你会有不少 - 掘金](https://juejin.cn/post/7024922528514572302)
 
-```sh
-git branch --list # 显示所有分支
-git branch 分支名  # 创建分支
-git branch -f main HEAD~3 # 让main分支强制指向head前3个提交
-```
+### git 文件名大小写敏感
 
-## 切换分支
+> 2025-03-22 clone joyful-pandas 遇到
 
-```sh
-git switch 分支名  # 切换分支
-git checkout 分支名 # 创建+切换分支
-git checkout -b dev # 创建并切换到 dev 分支
-git branch 查看当前分支
-```
+![20250322002110-2025-03-22](https://assets-1302294329.cos.ap-shanghai.myqcloud.com/2025/md/20250322002110-2025-03-22.png)
 
-## 合并
+原因是 windows 系统大小写不敏感，而 git 大小写敏感
 
-```sh
-分支1>>> git merge 分支2 # 将分支2合并到分支1
-```
+- [Windows 大小写不敏感导致的 git 冲突 | Finisky Garden](https://finisky.github.io/git-is-case-sensitive-while-file-system-is-not/)
 
-## 提交
+### git CR/CRLF 是怎么解决的？
 
-```sh
-# 将暂存区内容纳入Git提交记录
-git commit -m "message"
-# git add . 和 git commit -m "message" 合在一起
-git commit -am "message"
-```
+### 前言
 
-## `diff`：查看文件修改详情
+平常使用 `git add .` 或者 `git push|pull|clone` 等命令，已经无法满足各种奇怪的需求了，
 
-```sh
-TODO
-```
+在使用 Github 的时候，由于对【本地分支】和【远程分支】理解不够深刻，难免会出现各种问题
 
-## `restore`：取消对某个文件的修改
+所以本文章持续记录使用 Git 时遇到的各种复杂场景
 
-```sh
-# 当前是刚提交完
+### 1 本地分支相关
 
-# 从stages中移除
-git restore --staged 文件2
-```
+#### 1.1 签出会覆盖本地修改
 
-## `stash`：临时保存当前分支的工作状态，方便切换到其它分支
+场景描述：
 
-应用场景：比如在自己的分支上工作到一半，但是被要求去修改别的文件，此时就需要
+通常我会在 `dev` 分支上操作，然后细粒度地提交 commit，上传到 github 上形成一个 pull-request，然后 `main` 再接受 pr，合并成一个
 
-```sh
-# 临时保存当前分支的工作状态，方便切换到其它分支
-git stash
-# 恢复刚刚临时保存的工作状态
-git stash pop
-```
+但是有时候会忘记切换分支（比如现在就是），直接在 main 上更改
 
-## 撤销
+在 vscode 的状态栏就会出现 `*`，此时想换到 `dev` 分支
 
-```sh
-git reset --soft HEAD^
-```
+直接切换会出现
 
-## 修改最新的 commit message
+!签出会覆盖本地修改的图片
 
-```sh
-git commit --amend
-git commit --amend -m 'new message'
-git commit --amend -m "new message"
-```
+该提示下的三个选项分别是什么意思呢？
 
-## 修改中间的 commit message
+1. 储藏并签出：希望【暂存区】仍然在当前分支，然后切换到另一个分支
+2. 迁移更改：希望将【暂存区】的内容切换到另一个分支，可能要处理冲突问题
+3. 强制签出：（不推荐）直接放弃当前分支（比如 `main`）未提交的 `commmit`，然后切换为分支 `dev`
 
-```sh
-git log --oneline
-
-git rebase -i [start-point] [endpoint]
-# 或者
-git rebase -i HEAD^3
-```
-
-## 参考资料
+所以该场景我们需要的是【迁移更改】

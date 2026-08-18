@@ -26,8 +26,9 @@ tocopen: false
 
 - NFS
 - SMB
-- syncthing
+- syncthing: [[syncthing]]
 
 ## 备份类
+
 
 ## 参考资料
