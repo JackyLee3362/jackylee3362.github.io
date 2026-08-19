@@ -2,7 +2,7 @@
 title: awesome-config-lib
 description: 配置解决方案
 date: 2026-02-14
-update_date
+update_date:
 draft: true
 author: JackyLee
 tags:

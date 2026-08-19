@@ -2,7 +2,7 @@
 title: awesome-monitor
 description: 
 date: 2026-02-14
-update_date
+update_date:
 draft: true
 author: JackyLee
 tags:

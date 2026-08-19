@@ -2,7 +2,7 @@
 title: awesome-plot-tool
 description: 画图工具对比
 date: 2026-02-14
-update_date
+update_date:
 draft: true
 author: JackyLee
 tags:
