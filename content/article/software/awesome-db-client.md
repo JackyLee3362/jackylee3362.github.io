@@ -1,33 +1,24 @@
 ---
-type: basic-note
-title: awesome-database-数据库
-author: JackyLee
-create_time: 
-update_time:
-tags:
-description:
----
----
 title: awesome-db-client
 description: 数据库客户端对比
 date: 2025-11-02
+update_date:
 draft: true
 author: JackyLee
 tags:
-categories: 
+categories:
 cover:
   # image: 图片链接
   # alt: 文字内容
 comment: true
 ---
 
-
 ## 开源项目
 
 - [阿司匹林石膏汤 - 有哪些令人窒息的骚操作？ - 知乎](https://www.zhihu.com/question/65657700/answer/697568641)
-
   - 概要: 群里看到的 建议全行业共享数据库 [图片]
   - 点赞: 1466
+
 - [零一猴子 - 数据库不就是增删改查一些数据吗？研发一个数据库到底难在哪了？ - 知乎](https://www.zhihu.com/question/1895821971356381601/answer/1918389907941982546)
   - 概要: 开发数据库可太容易，不就 CURD 么，10 行不到就解决了： #!/bin/bash db_set () { echo &#34;$1,$2&#34; >> database } db_get () { grep &#34;^$1,&#34; database | sed -e &#34;s/^$1,//&#34; | tail -n 1 }底层用一个纯文本存储，追加写入数据，每次查询只用查看文件中最后一次出现的键就行。 不过好像没支持删除。哦，有了，我加一个标记就行，然后查的时候，如果发现了删除标记，就说明删除了。 #!/bin/bash db_set() { echo &#34;$1,$2&#34; >> database }…
   - 点赞: 931
@@ -67,6 +58,5 @@ comment: true
 ## 参考资料
 
 - [IfElseZhang - 如何理解关系型数据库的常见设计范式？ - 知乎](https://www.zhihu.com/question/24696366/answer/1975977273988497428)
-
   - 概要: 本文回溯 关系模型、1NF、2NF、3NF 以及 BCNF 等概念被提出时的论文，通过最原始的信息帮助读者理解各个概念的定义及初衷。关系模型及其重要的范式由 E.F.Codd 数据库泰斗于上世纪七十年代提出，相关论文如下： 1970 年，《A Relational Model of Data for Large Shared Data Banks》提出了关系模型，并定义了“第一范式”(1NF)[1]；1971 年，《Further Normalization of The Data Base Relational Model》定义了“第二范式”(2NF…
   - 点赞: 6
