@@ -1,5 +1,5 @@
 ---
-title: awesome-note
+title: awesome-note-client
 description:
 date: 2025-11-01
 draft: true
@@ -11,6 +11,11 @@ cover:
   # alt: 文字内容
 comment: true
 ---
+
+## 闭源
+
+roam-research
+AFFiNE
 
 ## 笔记软件
 
@@ -34,22 +39,6 @@ comment: true
 - foam: VSCode 笔记插件[foam - Github](https://github.com/foambubble/foam)
 - dendron: [dendron - Github](https://github.com/dendronhq/dendron)
 - Arya: 在线 Markdown 编辑器, [Arya - Github](https://github.com/nicejade/markdown-online-editor)
-
-## 白板工具
-
-- Excalidraw: Excalidraw 的作者是一位目前在 Facebook 工作的法裔前端开发工程师 Vjeux。除了是 Excalidraw 的作者之外，还是 React Native、Prettier 的联合创始人，也是 CSS-IN-JS、Yoga、React Conf 的创建者。
-- ReveZone: 回答中提到的增强版 Excalidraw 产品 Handraw 已全面升级为 ReveZone（公测中），
-
-- [神级程序员都在用什么工具? - 知乎](https://www.zhihu.com/question/465346075/answer/3091803862)
-
-## Draw.io
-
-## visio
-
-## 参考资料
-
-- [在线绘图王者：分分钟画好国自然(NSFC)技术路线图！ - 知乎](https://zhuanlan.zhihu.com/p/680927055)
-- [ProcessOn 思维导图流程图-在线画思维导图流程图\_在线作图实时协作](https://www.processon.com/)
 
 ## 按照用途划分
 

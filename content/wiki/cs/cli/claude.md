@@ -1,16 +1,17 @@
 ---
 title: claude
+alias:
+  - claude-code
 date: 2026-05-04
 draft: true
 author: JackyLee
 tags:
-categories: 
+categories:
 cover:
   # image: 图片链接
   # alt: 文字内容
 comment: true
 ---
-
 
 ## vscode 接入 Claude Code + DeepSeek
 
@@ -29,11 +30,11 @@ comment: true
     "CLAUDE_CODE_SUBAGENT_MODEL": "deepseek-v4-flash",
     "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "max"
   },
-"permissions": {
+  "permissions": {
     "allow": [],
     "deny": []
   },
-"alwaysThinkingEnabled": false
+  "alwaysThinkingEnabled": false
 }
 ```
 
