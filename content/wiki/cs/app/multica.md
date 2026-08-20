@@ -6,9 +6,11 @@ update_date:
 draft: true
 author: JackyLee
 tags:
-categories: 
+categories:
 cover:
   # image: 图片链接
   # alt: 文字内容
 comment: true
 ---
+
+- [multica-ai/multica: Assign issues to Claude Code, Codex, Cursor, and 17 more coding agents like teammates — open-source and self-hostable.](https://github.com/multica-ai/multica)

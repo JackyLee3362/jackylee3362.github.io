@@ -54,6 +54,10 @@ git count-objects -vH
 
 ## FAQ
 
+### Git 如何恢复本地分支
+
+[[git-reflog#恢复本地已删除分支]]
+
 ### git如何对历史搜索
 
 ### 本地 Git 仓库删除大 object
