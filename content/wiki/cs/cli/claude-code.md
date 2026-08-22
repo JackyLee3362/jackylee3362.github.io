@@ -38,4 +38,19 @@ comment: true
 }
 ```
 
+## skill 能力
+
+- 用户全局目录: `~/.claude/skills`
+- 项目级目录: `<project>/.claude/skills`
+- 插件目录: `~/.claude/plugins/cache/<marketplace>/<plugin>/<version>/skills/`
+- 内置的 skill
+
+优先级为 项目级 > 用户全局 > 插件 > 内置
+
+## FAQ
+
+### 插件系统和 skill 有什么区别？
+
+
+
 ## 参考资料

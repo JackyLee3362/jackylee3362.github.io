@@ -1,5 +1,5 @@
 ---
-title: macos-disk-manage-sop
+title: awesome-mac-tools
 description:
 date: 2026-08-22
 update_date:
@@ -12,4 +12,5 @@ cover:
   # alt: 文字内容
 comment: true
 ---
-[[mole]]
+
+- [ivoronin/TomatoBar: 🍅 World's neatest Pomodoro timer for macOS menu bar](https://github.com/ivoronin/TomatoBar)

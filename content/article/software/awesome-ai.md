@@ -15,7 +15,7 @@ comment: true
 
 ## Agent
 
-- [[claude]]
+- [[claude-code]]
 - [[codex]]
 - [[multica]]
 

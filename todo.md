@@ -22,5 +22,6 @@ description:
 - [ ] API 客户端
 - [ ] 模态编辑器 vim neovim nano emacs halix / VSCode IntellJ
 - [ ] 了解责任链和状态机
+- [ ] 开发一个 codex 和 claude 的插件
 
 ## 参考资料

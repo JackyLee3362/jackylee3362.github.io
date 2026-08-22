@@ -12,6 +12,9 @@ cover:
 comment: true
 ---
 
+[[xcode]]
+[[vscode]]
+
 ## Visual Studio
 
 - [Visual Studio 是不是坑了一代人？为什么？ - 知乎](https://www.zhihu.com/question/57853611/answer/3255021155)

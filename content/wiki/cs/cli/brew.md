@@ -1,5 +1,5 @@
 ---
-title: homebrew
+title: brew
 alias:
   - brew
 date: 2025-11-18
@@ -33,7 +33,13 @@ brew list
 brew info 软件包
 ```
 
+## tap
+
+tldr brew tap
+
 ## ISSUE
+
+### 2026-08-22: 什么是 tap
 
 ### 2026-08-22: brew vendor-install ruby 是什么?
 
