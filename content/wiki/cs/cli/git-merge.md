@@ -14,5 +14,12 @@ comment: true
 ## 合并
 
 ```sh
-分支1>>> git merge 分支2 # 将分支2合并到分支1
+# 将 master 合并到当前分支
+git merge master
+```
+
+## 撤销合并
+
+```sh
+git merge --abort
 ```
