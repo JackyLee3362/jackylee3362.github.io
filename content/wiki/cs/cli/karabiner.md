@@ -32,3 +32,4 @@ mac 键盘替换
 - [【MacOS】如何将外接键盘中的 Home/End 键调整为跳到行头/尾？ - Osea - 博客园](https://www.cnblogs.com/Osea/p/18962402)
 - [Karabiner-Elements complex_modifications rules](https://ke-complex-modifications.pqrs.org/?q=home)
 - [Karabiner 助力，让你的键盘操作快人一步 - 少数派](https://sspai.com/post/73827)
+- [Karabiner Complex Rules Generator](https://genesy.github.io/karabiner-complex-rules-generator/)

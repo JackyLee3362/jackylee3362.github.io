@@ -1,0 +1,31 @@
+---
+title: mole
+description:
+date: 2026-08-22
+update_date:
+draft: true
+author: JackyLee
+tags:
+categories: 
+cover:
+  # image: 图片链接
+  # alt: 文字内容
+comment: true
+---
+
+## 安装
+
+```sh
+brew install mole
+brew install tw93/tap/mole
+```
+
+- [tw93/Mole: 🐹 Clean, uninstall, analyze, optimize, and monitor your Mac. Free open-source CLI, plus a native Mac app.](https://github.com/tw93/mole)
+
+## FAQ: 安装 mole 报错
+
+- [[BUG] Installing via Homebrew requires command line tools for macOS 15 · Issue #157 · tw93/Mole](https://github.com/tw93/Mole/issues/157)
+
+```sh
+
+```  
