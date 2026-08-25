@@ -61,7 +61,21 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+      # ==========新增：同步静态文件到你的VPS Caddy站点目录==========
+      - name: Rsync deploy to my VPS
+        uses: burnett01/rsync-deployments@7.0.1
+        with:
+          switches: -avz --delete --rsh='ssh -o StrictHostKeyChecking=no'
+          path: ./public/
+          remote_host: ${{ secrets.ALIYUN_VPS_HOST }}
+          remote_user: ${{ secrets.ALIYUN_VPS_USER }}
+          remote_key: ${{ secrets.ALIYUN_VPS_SSH_KEY }}
+          remote_path: /opt/caddy/site
 
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
   # Deployment job
   deploy:
     environment:

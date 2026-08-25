@@ -85,6 +85,12 @@ sudo sshd -t
 sudo systemctl reload sshd
 ```
 
+## 本地测试连接
+
+```sh
+ssh -i 私钥文件 用户@服务器ip
+```
+
 ## 测试ssh连接
 
 ```sh
