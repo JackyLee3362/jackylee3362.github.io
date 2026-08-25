@@ -57,10 +57,7 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
+
       # ==========新增：同步静态文件到你的VPS Caddy站点目录==========
       - name: Rsync deploy to my VPS
         uses: burnett01/rsync-deployments@7.0.1
