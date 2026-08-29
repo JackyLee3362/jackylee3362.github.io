@@ -15,6 +15,9 @@ description:
 - [honojs/hono: Web framework built on Web Standards](https://github.com/honojs/hono)
 - [adnanh/webhook: webhook is a lightweight incoming webhook server to run shell commands](https://github.com/adnanh/webhook)
 
+[[localsend]]
+[[dokploy]]
+
 ## todo POST 项目
 
 - [ ] 关于 Typst 和 Latex
