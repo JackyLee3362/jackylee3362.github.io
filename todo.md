@@ -18,6 +18,8 @@ description:
 [[localsend]]
 [[dokploy]]
 
+- d3
+
 ## todo POST 项目
 
 - [ ] 关于 Typst 和 Latex
