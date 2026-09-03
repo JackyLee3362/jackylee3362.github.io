@@ -7,6 +7,9 @@ tags:
 categories:
 comment: true
 image: cover.webp
+cover:
+  image: cover.webp
+  hidden: false
 ---
 
 今天刚好休息在家，准备部署自己的博客，
