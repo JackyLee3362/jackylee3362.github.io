@@ -18,6 +18,8 @@ description:
 [[localsend]]
 [[dokploy]]
 
+- [korfuri/awesome-monorepo: A curated list of awesome Monorepo tools, software and architectures.](https://github.com/korfuri/awesome-monorepo)
+
 - d3
 
 ## todo POST 项目

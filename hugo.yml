@@ -1,7 +1,7 @@
 baseURL: https://JackyLee3362.github.io/
 title: JackyLee's Blog
 paginate: 7
-theme: PaperMod
+theme: hugo-theme-stack
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -19,7 +19,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: JackyLee 的博客
   description: JackyLee 的博客，欢迎讨论与留言
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Blog, Portfolio, HugoThemeStack]
   author: JackyLee
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -139,7 +139,7 @@ params:
         darkTheme: dark
 
 # 首页同时展示 posts 和 article
-mainSections: ["posts", "article"] 
+mainSections: ["posts", "article"]
 
 menu:
   main:
@@ -159,6 +159,10 @@ menu:
       name: 深度文章
       url: /article/
       weight: 8
+    - identifier: archive
+      name: 归档
+      url: /archive
+      weight: 10
     # - identifier: example
     #   name: example.org
     #   url: https://example.org
