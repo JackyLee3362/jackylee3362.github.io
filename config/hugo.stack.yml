@@ -1,0 +1,92 @@
+baseURL: https://JackyLee3362.github.io/
+title: JackyLee's Blog
+paginate: 7
+theme: hugo-theme-stack
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# 谷歌分析，后面加上唯一的 ID
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# Hugo原生配置，保留
+mainSections: ["posts", "article"]
+taxonomies:
+  category: categories
+  tag: tags
+markup:
+  highlight:
+    noClasses: false
+# ========= Stack主题参数（彻底抛弃PaperMod写法）=========
+params:
+  favicon: /favicon.ico
+  description: Hugo 博客~
+  sidebar:
+    avatar: "/android-chrome-512x512.png"
+    subtitle: JackyLee 的博客，欢迎讨论与留言
+  dateFormat:
+    published: "2006-01-02"
+    lastUpdated: "2006-01-02"
+  article:
+    toc: true
+    readingTime: true
+    wordCount: true
+    codeCopy: true
+    headingAnchor: true
+  # 关键配置：列表布局 detailed / compact
+  listLayout: detailed
+  theme:
+    default: auto
+  comments:
+    enabled: false
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/JackyLee3362
+    - identifier: leetcode
+      name: LeetCode
+      url: https://leetcode.cn/u/jacky-lee-n/
+widgets:
+    homepage:
+      - type: categories
+        params:
+          limit: 6
+      - type: tag-cloud
+        params:
+          limit: 20
+    page:
+      - type: toc
+
+# =========菜单配置（语法通用，微调顺序权重）=========
+menu:
+  main:
+    - identifier: post
+      name: 随笔
+      url: /post/
+      weight: 5
+    - identifier: article
+      name: 深度文章
+      url: /article/
+      weight: 8
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 20
+    - identifier: archive
+      name: 归档
+      url: /archive
+      weight: 25
+
+imageProcessing:
+  thumbnail:
+    enabled: true
