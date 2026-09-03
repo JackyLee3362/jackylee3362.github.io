@@ -6,9 +6,7 @@ author: JackyLee
 tags:
 categories:
 comment: true
-cover:
-  image: https://w.wallhaven.cc/full/og/wallhaven-og61yl.png
-  hidden: false
+image: cover.webp
 ---
 
 今天刚好休息在家，准备部署自己的博客，

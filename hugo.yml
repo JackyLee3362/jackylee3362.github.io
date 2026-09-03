@@ -15,134 +15,60 @@ minify:
   disableXML: true
   minifyOutput: true
 
-params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: JackyLee 的博客
-  description: JackyLee 的博客，欢迎讨论与留言
-  keywords: [Blog, Portfolio, HugoThemeStack]
-  author: JackyLee
-  # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
-  disableThemeToggle: false
-
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
-
-  # 将头像直接放在 static 中就可以
-  # assets:
-  #   # disableHLJS: true # to disable highlight.js
-  #   # disableFingerprinting: true
-  #   favicon: "<link / abs url>"
-  #   favicon16x16: "<link / abs url>"
-  #   favicon32x32: "<link / abs url>"
-  #   apple_touch_icon: "<link / abs url>"
-  #   safari_pinned_tab: "<link / abs url>"
-
-  label:
-    text: "主页"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
-
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: 关于我
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
-
-  # home-info mode
-  homeInfoParams:
-    Title: "你好呀朋友 \U0001F44B"
-    Content: 欢迎来到我的博客
-
-  socialIcons:
-    # - name: x
-    #   url: "https://x.com/"
-    # - name: stackoverflow
-    #   url: "https://stackoverflow.com"
-    - name: github
-      url: "https://github.com/JackyLee3362"
-    - name: leetcode
-      url: "https://leetcode.cn/u/jacky-lee-n/"
-
-  # 暂时不需要
-  # analytics:
-  #   google:
-  #     SiteVerificationTag: "XYZabc"
-  #   bing:
-  #     SiteVerificationTag: "XYZabc"
-  #   yandex:
-  #     SiteVerificationTag: "XYZabc"
-
-  cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: false # hide on list pages and home
-    hiddenInSingle: false # hide on single page
-
-  editPost:
-    URL: "https://github.com/JackyLee3362/Jackylee3362.github.io/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
-
-  # for search 搜索功能，之后再考虑
-  # https://fusejs.io/api/options.html
-  # fuseOpts:
-  #   isCaseSensitive: false
-  #   shouldSort: true
-  #   location: 0
-  #   distance: 1000
-  #   threshold: 0.4
-  #   minMatchCharLength: 0
-  #   limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-  #   keys: ["title", "permalink", "summary", "content"]
-
-  # 评论功能 好像没啥用
-  page:
-    comment:
-      enable: true
-      giscus:
-        enable: true
-        repo: JackyLee3362/Jackylee3362.github.io
-        repoId: R_kgDOLpCD4w
-        category: Announcements
-        categoryId: DIC_kwDOLpCD484Ceavz
-        lang: ""
-        mapping: pathname
-        reactionsEnabled: "1"
-        emitMetadata: "0"
-        inputPosition: bottom
-        lazyLoading: false
-        lightTheme: light
-        darkTheme: dark
-
-# 首页同时展示 posts 和 article
+# Hugo原生配置，保留
 mainSections: ["posts", "article"]
+taxonomies:
+  category: categories
+  tag: tags
+markup:
+  highlight:
+    noClasses: false
+imageProcessing:
+  thumbnail:
+    enabled: true
+# ========= Stack主题参数（彻底抛弃PaperMod写法）=========
+params:
+  sidebar:
+    subtitle: JackyLee 的博客，欢迎讨论与留言
+  dateFormat:
+    published: "2006-01-02"
+    lastUpdated: "2006-01-02"
+  article:
+    toc: true
+    readingTime: true
+    wordCount: true
+  theme:
+    default: auto
+  comments:
+    enabled: false
+    # 如果你后续需要giscus，打开下面注释，不要用原来page.comment结构
+    # provider: giscus
+    # giscus:
+    #   repo: JackyLee3362/Jackylee3362.github.io
+    #   repoId: R_kgDOLpCD4w
+    #   category: Announcements
+    #   categoryId: DIC_kwDOLpCD484Ceavz
+    #   mapping: pathname
+    #   lang: ""
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/JackyLee3362
+    - identifier: leetcode
+      name: LeetCode
+      url: https://leetcode.cn/u/jacky-lee-n/
 
+# =========菜单配置（语法通用，微调顺序权重）=========
 menu:
   main:
+    - identifier: post
+      name: 随笔
+      url: /post/
+      weight: 5
+    - identifier: article
+      name: 深度文章
+      url: /article/
+      weight: 8
     - identifier: categories
       name: 分类
       url: /categories/
@@ -151,32 +77,7 @@ menu:
       name: 标签
       url: /tags/
       weight: 20
-    - identifier: posts
-      name: 随笔
-      url: /posts/
-      weight: 5
-    - identifier: article
-      name: 深度文章
-      url: /article/
-      weight: 8
     - identifier: archive
       name: 归档
       url: /archive
-      weight: 10
-    # - identifier: example
-    #   name: example.org
-    #   url: https://example.org
-    #   weight: 30
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-pygmentsUseClasses: true
-markup:
-  highlight:
-    noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
-taxonomies:
-  category: categories
-  tag: tags
+      weight: 25

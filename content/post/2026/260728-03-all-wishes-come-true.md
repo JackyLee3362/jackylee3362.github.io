@@ -8,9 +8,7 @@ tags:
   - 动画电影
 categories:
   - 电影
-cover:
-  image: https://assets-1302294329.cos.ap-shanghai.myqcloud.com/2026/md/p2934175778.webp
-  hidden: true
+image: https://assets-1302294329.cos.ap-shanghai.myqcloud.com/2026/md/p2934175778.webp
 comment: true
 ---
 
